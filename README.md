@@ -38,6 +38,8 @@ The following points have been adressed based on feedback:
 
 -Implemented `Screenshots` only when a test fails.
 
+-Implemented a more secure way to input the user's `API KEY`
+
 -Finished the two remaining test cases.
 
 
