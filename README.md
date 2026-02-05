@@ -36,10 +36,10 @@ The following points have been adressed based on feedback:
 
 -Implemented `pytest fictures` for proper webdriver setup and cleanup
 
+-Implemented `Screenshots` only when a test fails.
 
-## -Zachytávať screenshoty a logy pri zlyhaní testov
+-Implemented a more secure way to input the user's `API KEY`
 
-## Pridať linters a tooling: flake8, black, type hints, ideálne aj pre-commit hooky.
-
+-Finished the two remaining test cases.
 
 
