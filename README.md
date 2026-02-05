@@ -40,6 +40,12 @@ The following points have been adressed based on feedback:
 
 -Implemented a more secure way to input the user's `API KEY`
 
--Finished the two remaining test cases.
+-Finished the two remaining test cases. (Martin was right, the read-only API key actually works)
 
+-Used `black .` and `flake8` for formatting and checking the code before pushing to git
+
+## That's all. Have a good one! :)
+
+
+![hippo](https://media.tenor.com/XXmdU1_Af-oAAAAj/cat-waving-hand.gif)
 
