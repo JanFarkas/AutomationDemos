@@ -10,7 +10,7 @@ API TESTS      `test_1x_`
 
 1. Install requirements.
    
-   `pip install requirements`
+   `pip install -r requirements.txt`
 3. Create a Virtual Enviroment.
 
    `python -m venv .venv`
