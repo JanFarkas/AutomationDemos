@@ -1,6 +1,7 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
+
 def test_logout(page):
     """
     Logout must terminate the session and prevent access to authenticated pages.
@@ -16,5 +17,9 @@ def test_logout(page):
 
     inventory.logout()
 
-    assert page.url == "https://www.saucedemo.com/", "User was not redirected to login page after logout"
-    assert page.locator("#login-button").is_visible(), "Login button not visible after logout"
+    assert (
+        page.url == "https://www.saucedemo.com/"
+    ), "User was not redirected to login page after logout"
+    assert page.locator(
+        "#login-button"
+    ).is_visible(), "Login button not visible after logout"

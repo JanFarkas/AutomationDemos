@@ -1,5 +1,6 @@
 from playwright.sync_api import Page
 
+
 class InventoryPage:
     def __init__(self, page: Page):
         self.page = page
@@ -19,7 +20,7 @@ class InventoryPage:
 
     def get_cart_badge_count(self) -> int:
         return int(self.page.locator(".shopping_cart_badge").inner_text())
-    
+
     def add_item_by_index(self, index: int):
         buttons = self.page.locator(".inventory_item button")
         buttons.nth(index).click()

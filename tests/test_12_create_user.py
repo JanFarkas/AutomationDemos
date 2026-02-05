@@ -2,7 +2,6 @@ import json
 import time
 import pytest
 
-
 with open("create_users.json") as f:
     test_data = json.load(f)
 
@@ -11,10 +10,7 @@ with open("create_users.json") as f:
 def test_post_create_user(api_context, user_data):
     start_time = time.time()
 
-    response = api_context.post(
-        "/api/users",
-        data=user_data
-    )
+    response = api_context.post("/api/users", data=user_data)
 
     elapsed_ms = (time.time() - start_time) * 1000
 

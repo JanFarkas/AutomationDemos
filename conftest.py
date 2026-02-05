@@ -1,6 +1,7 @@
 import pytest
 import os
 
+
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
@@ -21,8 +22,8 @@ def api_context(playwright):
         extra_http_headers={
             "x-api-key": API_KEY,
             "Accept": "application/json",
-            "User-Agent": "QA-Automation"
-        }
+            "User-Agent": "QA-Automation",
+        },
     )
     yield context
     context.dispose()

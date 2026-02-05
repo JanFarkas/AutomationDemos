@@ -2,12 +2,15 @@ import pytest
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
-@pytest.mark.parametrize("item_index,expected_count", [
-    (0, 1),
-    (1, 1),
-    (2, 1),
-])
 
+@pytest.mark.parametrize(
+    "item_index,expected_count",
+    [
+        (0, 1),
+        (1, 1),
+        (2, 1),
+    ],
+)
 def test_addToCart(page, item_index, expected_count):
     login = LoginPage(page)
     inventory = InventoryPage(page)
